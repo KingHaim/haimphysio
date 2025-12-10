@@ -2,6 +2,7 @@ export type TranslationKeys = {
     nav: {
         about: string;
         services: string;
+        blog: string;
         experience: string;
         contact: string;
     };

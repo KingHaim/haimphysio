@@ -7,6 +7,7 @@ export const translations: Translations = {
         nav: {
             about: "About",
             services: "Services",
+            blog: "Blog",
             experience: "Experience",
             contact: "Contact",
         },
@@ -70,6 +71,7 @@ export const translations: Translations = {
         nav: {
             about: "Sobre Mí",
             services: "Servicios",
+            blog: "Blog",
             experience: "Experiencia",
             contact: "Contacto",
         },
