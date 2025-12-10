@@ -14,7 +14,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
         <img
           src="/images/hero-bg.jpg"
           alt="Haim Ganancia at Wimbledon"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-left md:object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-background"></div>
       </div>
