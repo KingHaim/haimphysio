@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { Globe, Menu, X } from 'lucide-react';
 import { TranslationKeys, Language } from '../types';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -12,6 +13,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ t, lang, setLang }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,12 +24,29 @@ const Navbar: React.FC<NavbarProps> = ({ t, lang, setLang }) => {
   }, []);
 
   const navLinks = [
-    { href: '#about', label: t.about },
-    { href: '#experience', label: t.experience },
-    { href: '#blog', label: t.blog },
-    { href: '#services', label: t.services },
-    { href: '#contact', label: t.contact },
+    { id: 'about', label: t.about },
+    { id: 'experience', label: t.experience },
+    { id: 'blog', label: t.blog, isRoute: true },
+    { id: 'services', label: t.services },
+    { id: 'contact', label: t.contact },
   ];
+
+
+  
+  // Custom navigation handler to ensure scrolling works
+  const handleNavClick = (id: string, isRoute?: boolean) => {
+    setIsMobileMenuOpen(false);
+    if (isRoute) return;
+    
+    // If we are on home page, scroll to element
+    if (location.pathname === '/') {
+       const element = document.getElementById(id);
+       if (element) {
+         element.scrollIntoView({ behavior: 'smooth' });
+       }
+    }
+    // If not on home page, Router Link to /#id will handle navigation, but scrolling might need a useEffect hook on Home to check hash.
+  };
 
   return (
     <nav
@@ -36,21 +55,22 @@ const Navbar: React.FC<NavbarProps> = ({ t, lang, setLang }) => {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="text-2xl font-serif font-bold text-white tracking-wider">
+        <RouterLink to="/" className="text-2xl font-serif font-bold text-white tracking-wider">
           HG<span className="text-primary">.</span>
-        </a>
+        </RouterLink>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-12">
           <div className="flex space-x-8">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm uppercase tracking-widest text-gray-300 hover:text-primary transition-colors"
+              <RouterLink
+                key={link.id}
+                to={link.isRoute ? `/${link.id}` : `/#${link.id}`}
+                onClick={() => handleNavClick(link.id, link.isRoute)}
+                className="text-sm uppercase tracking-widest text-gray-300 hover:text-primary transition-colors cursor-pointer"
               >
                 {link.label}
-              </a>
+              </RouterLink>
             ))}
           </div>
 
@@ -62,12 +82,13 @@ const Navbar: React.FC<NavbarProps> = ({ t, lang, setLang }) => {
               <Globe className="w-4 h-4" />
               <span className="text-xs font-bold">{lang.toUpperCase()}</span>
             </button>
-            <a
-                href="#contact"
+            <RouterLink
+                to="/#contact"
+                onClick={() => handleNavClick('contact')}
                 className="btn-primary px-6 py-2 bg-primary text-black font-bold text-sm tracking-wider hover:bg-white transition-colors duration-300"
             >
                 BOOK NOW
-            </a>
+            </RouterLink>
           </div>
         </div>
 
@@ -91,14 +112,14 @@ const Navbar: React.FC<NavbarProps> = ({ t, lang, setLang }) => {
           >
             <div className="flex flex-col space-y-6">
               {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                <RouterLink
+                  key={link.id}
+                  to={link.isRoute ? `/${link.id}` : `/#${link.id}`}
+                  onClick={() => handleNavClick(link.id, link.isRoute)}
                   className="text-lg text-gray-300 hover:text-primary"
                 >
                   {link.label}
-                </a>
+                </RouterLink>
               ))}
               <div className="pt-6 border-t border-white/10 flex justify-between items-center">
                 <button
