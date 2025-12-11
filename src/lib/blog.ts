@@ -1,17 +1,3 @@
-import matter from 'gray-matter';
-import { Buffer } from 'buffer';
-
-declare global {
-    interface Window {
-        Buffer: typeof Buffer;
-    }
-}
-
-// Polyfill buffer for browser environment if needed (gray-matter uses it)
-if (typeof window !== 'undefined') {
-    window.Buffer = window.Buffer || Buffer;
-}
-
 export interface BlogPost {
     slug: string;
     title: string;
@@ -21,14 +7,41 @@ export interface BlogPost {
     image?: string;
 }
 
+const parseFrontmatter = (fileContent: string) => {
+    const frontmatterRegex = /---\s*([\s\S]*?)\s*---\s*([\s\S]*)/;
+    const match = frontmatterRegex.exec(fileContent);
+
+    if (!match) {
+        return {
+            data: {} as any,
+            content: fileContent,
+        };
+    }
+
+    const frontmatterBlock = match[1];
+    const content = match[2];
+
+    const data: Record<string, string> = {};
+    frontmatterBlock.split('\n').forEach((line) => {
+        const [key, ...value] = line.split(':');
+        if (key && value) {
+            // Remove quotes and whitespace
+            data[key.trim()] = value.join(':').trim().replace(/^['"](.*)['"]$/, '$1');
+        }
+    });
+
+    return { data, content };
+};
+
 export const getBlogPosts = async (): Promise<BlogPost[]> => {
-    const modules = import.meta.glob('/src/content/blog/*.md', { as: 'raw' });
+    // Use query: '?raw' for Vite to load file content as string
+    const modules = import.meta.glob('/src/content/blog/*.md', { query: '?raw', import: 'default' });
 
     const posts: BlogPost[] = [];
 
     for (const path in modules) {
-        const rawContent = await modules[path]();
-        const { data, content } = matter(rawContent);
+        const rawContent: string = (await modules[path]()) as string;
+        const { data, content } = parseFrontmatter(rawContent);
         const slug = path.split('/').pop()?.replace('.md', '') || '';
 
         posts.push({
