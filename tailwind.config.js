@@ -12,9 +12,9 @@ export default {
         primary: "#d4af37", // Gold
         secondary: "#1e3a8a", // Deep Blue
         text: {
-            primary: "#ffffff",
-            secondary: "#a1a1aa",
-            muted: "#52525b"
+          primary: "#ffffff",
+          secondary: "#a1a1aa",
+          muted: "#52525b"
         }
       },
       fontFamily: {
@@ -27,5 +27,7 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
