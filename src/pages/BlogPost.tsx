@@ -40,8 +40,6 @@ const BlogPost: React.FC<{ lang: string }> = () => {
                 {post.title}
             </h1>
             <div className="flex items-center justify-center space-x-4 text-gray-400 text-sm">
-                <p>{String(post.date)}</p> {/* Explicit String cast for safety */}
-                <span>•</span>
                 <p>3 min read</p> {/* Placeholder reading time */}
             </div>
         </div>
