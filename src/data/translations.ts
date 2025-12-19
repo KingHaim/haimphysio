@@ -22,7 +22,7 @@ export const translations: Translations = {
             wta: {
                 title: "Elite Performance: Transforming the Best",
                 description:
-                    "I have worked with tennis stars like Dayana Yastremska and numerous elite football players, enhancing their physical performance and accelerating their recovery through specialized sports physiotherapy and home visit treatments in Marbella.",
+                    "I have worked with tennis stars like Karolina Pliskova and numerous elite football players, enhancing their physical performance and accelerating their recovery through specialized sports physiotherapy and home visit treatments in Marbella.",
             },
             care: {
                 title: "Personalized Care: Mobile Specialist",
@@ -87,7 +87,7 @@ export const translations: Translations = {
                 title:
                     "Alto Rendimiento: Transformando a los Mejores",
                 description:
-                    "He trabajado con estrellas del tenis como Dayana Yastremska y futbolistas de élite, potenciando su rendimiento y acelerando su recuperación con servicios especializados de fisioterapeuta a domicilio Marbella.",
+                    "He trabajado con estrellas del tenis como Karolina Pliskova y futbolistas de élite, potenciando su rendimiento y acelerando su recuperación con servicios especializados de fisioterapeuta a domicilio Marbella.",
             },
             care: {
                 title: "Atención Personalizada: Especialista a Domicilio",
