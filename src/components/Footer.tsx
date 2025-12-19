@@ -18,6 +18,13 @@ const Footer: React.FC<FooterProps> = ({ t }) => {
           {t.rights}
         </div>
       </div>
+      <div className="container mx-auto px-6 mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[10px] uppercase tracking-[0.2em] text-gray-600 font-medium">
+        <span>Fisioterapeuta a domicilio Marbella</span>
+        <span className="text-primary/20">•</span>
+        <span>Mobile Physiotherapist Marbella</span>
+        <span className="text-primary/20">•</span>
+        <span>Home Visit Physiotherapy Marbella</span>
+      </div>
     </footer>
   );
 };

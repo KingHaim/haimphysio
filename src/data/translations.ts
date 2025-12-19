@@ -14,20 +14,20 @@ export const translations: Translations = {
         hero: {
             title: "Elite Physiotherapy for Peak Performance",
             subtitle:
-                "Former physiotherapist of WTA stars like Dayana Yastremska and Karolina Pliskova, I combine science, innovation, and advanced techniques to help you relieve pain, restore mobility, and optimize your physical function. Whether you're recovering from an injury or looking to improve your quality of life, I guide you on the path to feeling your best again.",
+                "Former physiotherapist of WTA stars, I offer elite performance and home visit physiotherapy in Marbella. As a mobile physiotherapist in Marbella, I combine science and advanced techniques to help you relieve pain and optimize function wherever you are. Whether you're recovering from injury or seeking to optimize performance, I guide you on the path to excellence.",
             cta: "Book Consultation",
         },
         experience: {
             title: "Professional Experience",
             wta: {
-                title: "Experience in High Performance: Transforming the Best",
+                title: "Elite Performance: Transforming the Best",
                 description:
-                    "I have worked with tennis stars and numerous elite football players, enhancing their physical performance and accelerating their recovery. I didn't just manage their well-being—I helped them reach their full potential on the field and the court.",
+                    "I have worked with tennis stars like Dayana Yastremska and numerous elite football players, enhancing their physical performance and accelerating their recovery through specialized sports physiotherapy and home visit treatments in Marbella.",
             },
             care: {
-                title: "Personalized Care: Elite Recovery for Everyone",
+                title: "Personalized Care: Mobile Specialist",
                 description:
-                    "I apply advanced sports medicine techniques, tailored to each individual, to create personalized treatment plans that accelerate recovery and optimize your performance. No matter your level, I guide you toward feeling your best.",
+                    "I apply advanced techniques tailored to each individual, offering the convenience of a mobile physiotherapist in Marbella for personalized treatment plans that accelerate recovery and optimize peak performance.",
             },
         },
         services: {
@@ -35,16 +35,16 @@ export const translations: Translations = {
             rehab: {
                 title: "Rehabilitation",
                 description:
-                    "Specialized rehabilitation programs for athletes and sports enthusiasts.",
+                    "Specialized rehabilitation and home visit physiotherapy Marbella for elite performance and recovery.",
             },
             manual: {
                 title: "Manual Therapy",
-                description: "Hands-on techniques to reduce pain and improve mobility.",
+                description: "Hands-on techniques for pain relief, available via mobile physiotherapy Marbella for your convenience.",
             },
             performance: {
                 title: "Performance",
                 description:
-                    "Programs designed to optimize athletic performance and prevent injuries.",
+                    "Optimization programs and mobile specialist care designed to maximize athletic potential and prevent injuries.",
             },
         },
         contact: {
@@ -59,12 +59,12 @@ export const translations: Translations = {
             form: {
                 title: "Book an Appointment",
                 description:
-                    "Click below to schedule your appointment through Calendly",
+                    "Click below to schedule your appointment through Calendly for clinic or home visits in Marbella.",
                 button: "Schedule Appointment",
             },
         },
         footer: {
-            rights: "© 2024 Haim Ganancia Physiotherapy. All rights reserved.",
+            rights: "© 2024 Haim Ganancia Physiotherapy | Mobile Physiotherapist Marbella. All rights reserved.",
         },
     },
     es: {
@@ -78,21 +78,21 @@ export const translations: Translations = {
         hero: {
             title: "Fisioterapia de Elite para un Rendimiento Óptimo",
             subtitle:
-                "Ex fisioterapeuta de estrellas de la WTA como Dayana Yastremska y Karolina Pliskova, combino ciencia, innovación y técnicas avanzadas para ayudarte a aliviar el dolor, recuperar la movilidad y optimizar tu función física. Ya sea que estés superando una lesión o buscando mejorar tu calidad de vida, te guío para que vuelvas a sentirte en tu mejor forma.",
+                "Ex fisioterapeuta de estrellas de la WTA, ofrezco servicios de fisioterapeuta a domicilio Marbella para un rendimiento de élite. Combino ciencia y técnicas avanzadas para ayudarte a aliviar el dolor y optimizar tu función física donde lo necesites. Ya sea por una lesión o para mejorar tu rendimiento, te guío hacia tu mejor versión.",
             cta: "Reservar Consulta",
         },
         experience: {
             title: "Experiencia Profesional",
             wta: {
                 title:
-                    "Experiencia en el Alto Rendimiento: Transformando a los Mejores",
+                    "Alto Rendimiento: Transformando a los Mejores",
                 description:
-                    "He trabajado con estrellas del tenis y numerosos futbolistas de élite, potenciando su rendimiento físico y acelerando su recuperación. No solo gestioné su bienestar, sino que los ayudé a alcanzar su máximo potencial en el campo y la cancha.",
+                    "He trabajado con estrellas del tenis como Dayana Yastremska y futbolistas de élite, potenciando su rendimiento y acelerando su recuperación con servicios especializados de fisioterapeuta a domicilio Marbella.",
             },
             care: {
-                title: "Atención Personalizada: Recuperación de Élite para Todos",
+                title: "Atención Personalizada: Especialista a Domicilio",
                 description:
-                    "Aplico técnicas avanzadas de medicina deportiva de élite, adaptadas a cada individuo, para crear planes de tratamiento personalizados que aceleran la recuperación y optimizan tu rendimiento. No importa tu nivel, te guío para que te sientas en tu mejor forma.",
+                    "Aplico técnicas avanzadas de medicina deportiva adaptadas a cada individuo, ofreciendo la comodidad de un fisioterapeuta a domicilio Marbella para planes de tratamiento que optimizan tu rendimiento.",
             },
         },
         services: {
@@ -100,17 +100,17 @@ export const translations: Translations = {
             rehab: {
                 title: "Rehabilitación",
                 description:
-                    "Programas especializados de rehabilitación para atletas y entusiastas del deporte.",
+                    "Programas de rehabilitación y fisioterapeuta a domicilio Marbella para atletas y entusiastas del deporte.",
             },
             manual: {
                 title: "Terapia Manual",
                 description:
-                    "Técnicas manuales para reducir el dolor y mejorar la movilidad.",
+                    "Técnicas manuales para reducir el dolor y mejorar la movilidad, disponibles a domicilio en Marbella.",
             },
             performance: {
                 title: "Alto Rendimiento",
                 description:
-                    "Programas diseñados para optimizar el rendimiento atlético y prevenir lesiones.",
+                    "Programas para optimizar el rendimiento atlético y prevenir lesiones con atención personalizada a domicilio.",
             },
         },
         contact: {
