@@ -42,7 +42,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
             ],
             options: [
                 { id: 'booking_choice', label: 'Book Appointment' },
-                { id: 'whatsapp', label: '💬 WhatsApp Clinic', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'whatsapp', label: '💬 WhatsApp Clinic', action: 'link', value: 'https://wa.me/34622851648?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20with%20Haim' },
                 { id: 'back', label: '🔙 Main Menu' },
             ]
         },
@@ -99,7 +99,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
             ],
             options: [
                 { id: 'at_home', label: '🏠 At Home', action: 'trigger-booking' },
-                { id: 'in_clinic', label: '🏥 In Clinic (CostaSpine)', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'in_clinic', label: '🏥 In Clinic (CostaSpine)', action: 'link', value: 'https://wa.me/34622851648?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20with%20Haim' },
                 { id: 'back', label: '🔙 Back' },
             ]
         },
@@ -112,7 +112,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
             ],
             options: [
                 { id: 'map', label: '🗺️ Clinic Map', action: 'link', value: 'https://maps.google.com/?q=Centro+Comercial+Guadalmina+4,+Marbella' },
-                { id: 'whatsapp', label: '💬 WhatsApp Us', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'whatsapp', label: '💬 WhatsApp Us', action: 'link', value: 'https://wa.me/34622851648?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20with%20Haim' },
                 { id: 'back', label: '🔙 Main Menu' },
             ]
         },
@@ -123,7 +123,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "I prioritize acute injuries."
             ],
             options: [
-                { id: 'whatsapp', label: '💬 WhatsApp Priority', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'whatsapp', label: '💬 WhatsApp Priority', action: 'link', value: 'https://wa.me/34622851648?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20with%20Haim' },
                 { id: 'booking_choice', label: 'Book Next Slot' },
             ]
         },
