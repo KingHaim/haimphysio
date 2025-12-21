@@ -3,10 +3,13 @@ import { useParams, Link } from 'react-router-dom';
 import Markdown from 'react-markdown';
 import { BlogPost as BlogPostType, getBlogPost } from '../lib/blog';
 import { ArrowLeft } from 'lucide-react';
+import { translations } from '../data/translations';
+import { Language } from '../types';
 
-const BlogPost: React.FC<{ lang: string }> = () => {
+const BlogPost: React.FC<{ lang: Language }> = ({ lang }) => {
   const { slug } = useParams<{ slug: string }>();
   const [post, setPost] = useState<BlogPostType | null>(null);
+  const t = translations[lang];
 
   useEffect(() => {
     if (slug) {
@@ -16,7 +19,7 @@ const BlogPost: React.FC<{ lang: string }> = () => {
 
   if (!post) return (
     <div className="min-h-screen flex items-center justify-center bg-background text-gray-400">
-        <div className="animate-pulse">Loading amazing content...</div>
+        <div className="animate-pulse">{t.blog.loading}</div>
     </div>
   );
 
@@ -27,20 +30,20 @@ const BlogPost: React.FC<{ lang: string }> = () => {
         <div className="container mx-auto px-6">
             <Link to="/blog" className="group inline-flex items-center text-sm font-bold text-gray-400 hover:text-white mb-12 transition-colors uppercase tracking-widest">
                 <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" /> 
-                Back to Journal
+                {t.blog.back}
             </Link>
         </div>
 
         {/* Hero Section */}
         <div className="container mx-auto px-6 max-w-4xl text-center mb-16">
             <span className="inline-block py-1 px-3 border border-primary/30 rounded-full text-primary text-xs font-bold tracking-widest uppercase mb-6">
-                Physiotherapy Insights
+                {t.blog.insights}
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
                 {post.title}
             </h1>
             <div className="flex items-center justify-center space-x-4 text-gray-400 text-sm">
-                <p>3 min read</p> {/* Placeholder reading time */}
+                <p>{t.blog.readTime}</p> {/* Placeholder reading time */}
             </div>
         </div>
 
@@ -62,9 +65,9 @@ const BlogPost: React.FC<{ lang: string }> = () => {
             
             {/* Share/CTA Footer */}
             <div className="mt-20 pt-10 border-t border-white/10 text-center">
-                <h3 className="text-white font-bold mb-4">Ready to perform at your peak?</h3>
-                <a href="/#contact" className="inline-block bg-primary text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors">
-                    Book Consultation
+                <h3 className="text-white font-bold mb-4">{t.blog.ready}</h3>
+                <a href={lang === 'es' ? '/#contact' : '/#contact'} className="inline-block bg-primary text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors">
+                    {t.blog.cta}
                 </a>
             </div>
         </div>

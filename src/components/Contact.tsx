@@ -1,6 +1,6 @@
 import React from 'react';
 import { TranslationKeys } from '../types';
-import { MapPin, Phone, Mail, Clock, Calendar } from 'lucide-react';
+import { MapPin, Phone, Clock, Calendar } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface ContactProps {
@@ -40,7 +40,7 @@ const Contact: React.FC<ContactProps> = ({ t }) => {
                 <div>
                   <h3 className="text-lg font-bold text-white mb-1">{t.phone}</h3>
                   <p className="text-gray-400">+34 669 933 534</p>
-                  <p className="text-sm text-green-400">(WhatsApp Preferred)</p>
+                  <p className="text-sm text-green-400">{t.whatsapp}</p>
                 </div>
               </div>
 
@@ -79,7 +79,7 @@ const Contact: React.FC<ContactProps> = ({ t }) => {
              
              <div className="mt-8 pt-8 border-t border-white/10 text-center">
                 <p className="text-sm text-gray-500">
-                    Prefer to speak? WhatsApp us at <span className="text-white">+34 669 933 534</span>
+                    {t.preferSpeak} <span className="text-white">+34 669 933 534</span>
                 </p>
              </div>
           </motion.div>

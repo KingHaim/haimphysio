@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost, getBlogPosts } from '../lib/blog';
-import { TranslationKeys } from '../types';
 
 interface BlogIndexProps {
     t: any; // Type lazily for now or extend types
     lang: string;
 }
 
-const BlogIndex: React.FC<BlogIndexProps> = () => {
+const BlogIndex: React.FC<BlogIndexProps> = ({ t }) => {
   const [posts, setPosts] = useState<BlogPost[]>([]);
 
   useEffect(() => {
@@ -19,11 +18,11 @@ const BlogIndex: React.FC<BlogIndexProps> = () => {
     <div className="pt-32 pb-24 min-h-screen container mx-auto px-6">
         <div className="text-center mb-16 max-w-2xl mx-auto">
             <span className="inline-block py-1 px-3 border border-primary/30 rounded-full text-primary text-xs font-bold tracking-widest uppercase mb-6">
-                Journal
+                {t.blog.subtitle}
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Insights & Performance</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">{t.blog.title}</h1>
             <p className="text-gray-400 text-lg">
-                Explore the latest research, injury prevention strategies, and recovery techniques from elite physiotherapy.
+                {t.blog.description}
             </p>
         </div>
       
@@ -45,7 +44,7 @@ const BlogIndex: React.FC<BlogIndexProps> = () => {
                 <p className="text-gray-400 mb-6 flex-1 line-clamp-3 leading-relaxed">{post.excerpt}</p>
                 
                 <div className="flex items-center text-white text-sm font-bold group-hover:translate-x-2 transition-transform">
-                    Read Article <span className="text-primary ml-2">→</span>
+                    {t.blog.readMore} <span className="text-primary ml-2">→</span>
                 </div>
               </div>
             </div>

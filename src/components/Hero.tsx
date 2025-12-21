@@ -27,12 +27,12 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
           transition={{ duration: 0.8 }}
         >
           <span className="inline-block py-1 px-3 border border-primary/50 rounded-full text-primary text-sm tracking-widest uppercase mb-6 bg-black/30 backdrop-blur-sm">
-            Elite Sports Physiotherapy
+            {t.badge}
           </span>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Perform at Your <br />
+            {t.titlePart1} <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-white">
-              Peak Potential
+              {t.titlePart2}
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-10 font-light">

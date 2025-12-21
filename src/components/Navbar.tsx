@@ -87,7 +87,7 @@ const Navbar: React.FC<NavbarProps> = ({ t, lang, setLang }) => {
                 onClick={() => handleNavClick('contact')}
                 className="btn-primary px-6 py-2 bg-primary text-black font-bold text-sm tracking-wider hover:bg-white transition-colors duration-300"
             >
-                BOOK NOW
+                {t.bookNow}
             </RouterLink>
           </div>
         </div>
