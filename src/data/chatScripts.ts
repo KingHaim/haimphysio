@@ -38,11 +38,11 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "🏠 **Home Visits**: 120€ (Comfort of your home).",
                 "🏥 **Clinic (CostaSpine)**: 90€ (First Session), 80€ (Follow-ups).",
                 "🎁 **Clinic Pack**: 5 Sessions for 350€ (70€/session).",
-                "To book at the clinic, contact via **WhatsApp: +34 669 933 534**."
+                "To book at the clinic, contact via **WhatsApp: +34 622 85 16 48**."
             ],
             options: [
                 { id: 'booking_choice', label: 'Book Appointment' },
-                { id: 'whatsapp', label: '💬 WhatsApp Clinic', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'whatsapp', label: '💬 WhatsApp Clinic', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
                 { id: 'back', label: '🔙 Main Menu' },
             ]
         },
@@ -99,7 +99,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
             ],
             options: [
                 { id: 'at_home', label: '🏠 At Home', action: 'trigger-booking' },
-                { id: 'in_clinic', label: '🏥 In Clinic (CostaSpine)', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'in_clinic', label: '🏥 In Clinic (CostaSpine)', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
                 { id: 'back', label: '🔙 Back' },
             ]
         },
@@ -112,7 +112,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
             ],
             options: [
                 { id: 'map', label: '🗺️ Clinic Map', action: 'link', value: 'https://maps.google.com/?q=Centro+Comercial+Guadalmina+4,+Marbella' },
-                { id: 'whatsapp', label: '💬 WhatsApp Us', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'whatsapp', label: '💬 WhatsApp Us', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
                 { id: 'back', label: '🔙 Main Menu' },
             ]
         },
@@ -123,7 +123,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "I prioritize acute injuries."
             ],
             options: [
-                { id: 'whatsapp', label: '💬 WhatsApp Priority', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'whatsapp', label: '💬 WhatsApp Priority', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
                 { id: 'booking_choice', label: 'Book Next Slot' },
             ]
         },
@@ -154,11 +154,11 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "🏠 **Domicilio**: 120€.",
                 "🏥 **Clínica (CostaSpine)**: 90€ (1ª Sesión), 80€ (Seguimientos).",
                 "🎁 **Bono Clínica**: 5 Sesiones por 350€ (70€/sesión).",
-                "Para cita en clínica, contacta por **WhatsApp: +34 669 933 534**."
+                "Para cita en clínica, contacta por **WhatsApp: +34 622 85 16 48**."
             ],
             options: [
                 { id: 'booking_choice', label: 'Reservar Cita' },
-                { id: 'whatsapp', label: '💬 WhatsApp Clínica', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'whatsapp', label: '💬 WhatsApp Clínica', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
                 { id: 'back', label: '🔙 Menú Principal' },
             ]
         },
@@ -215,7 +215,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
             ],
             options: [
                 { id: 'at_home', label: '🏠 A Domicilio', action: 'trigger-booking' },
-                { id: 'in_clinic', label: '🏥 En Clínica (CostaSpine)', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'in_clinic', label: '🏥 En Clínica (CostaSpine)', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
                 { id: 'back', label: '🔙 Volver' },
             ]
         },
@@ -227,8 +227,8 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "Abierto Lun-Vie 12:00 - 20:00."
             ],
             options: [
-                { id: 'map', label: '🗺️ Mapa Clínica', action: 'link', value: 'https://maps.google.com/?q=Centro+Comercial+Guadalmina+4,+Marbella' },
-                { id: 'whatsapp', label: '💬 Contactar WhatsApp', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'map', label: '🗺️ Mapa Clínica', action: 'link', value: 'https://maps.google.com/?q=Centro+Comercial+Guadalmina 4,+Marbella' },
+                { id: 'whatsapp', label: '💬 Contactar WhatsApp', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
                 { id: 'back', label: '🔙 Menú Principal' },
             ]
         },
@@ -239,7 +239,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "Doy prioridad a las lesiones agudas."
             ],
             options: [
-                { id: 'whatsapp', label: '💬 WhatsApp Prioritario', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'whatsapp', label: '💬 WhatsApp Prioritario', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
                 { id: 'booking_choice', label: 'Reservar Turno' },
             ]
         },
