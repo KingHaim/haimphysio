@@ -26,7 +26,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
             ],
             options: [
                 { id: 'pricing', label: '💰 Pricing & Location' },
-                { id: 'book', label: '📅 Book Now', action: 'trigger-booking' },
+                { id: 'booking_choice', label: '📅 Book Now' },
                 { id: 'services', label: '🏆 Services' },
                 { id: 'urgent', label: '🚑 Urgent / Pain' },
             ]
@@ -41,8 +41,8 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "To book at the clinic, contact via **WhatsApp: +34 669 933 534**."
             ],
             options: [
-                { id: 'book', label: 'Book Home Visit', action: 'trigger-booking' },
-                { id: 'whatsapp', label: '💬 WhatsApp Clinic', action: 'link', value: 'https://wa.me/34669933534' },
+                { id: 'booking_choice', label: 'Book Appointment' },
+                { id: 'whatsapp', label: '💬 WhatsApp Clinic', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
                 { id: 'back', label: '🔙 Main Menu' },
             ]
         },
@@ -66,7 +66,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "My rehabilitation programs are data-driven and designed to return you to play stronger than before."
             ],
             options: [
-                { id: 'book', label: 'Schedule Evaluation', action: 'trigger-booking' },
+                { id: 'booking_choice', label: 'Schedule Evaluation' },
                 { id: 'back', label: '🔙 Back' },
             ]
         },
@@ -77,7 +77,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "I release tension and restore standard biomechanics for immediate relief."
             ],
             options: [
-                { id: 'book', label: 'Book Session', action: 'trigger-booking' },
+                { id: 'booking_choice', label: 'Book Session' },
                 { id: 'back', label: '🔙 Back' },
             ]
         },
@@ -88,7 +88,18 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "Train like our WTA and elite football clients to prevent injury and optimize output."
             ],
             options: [
-                { id: 'book', label: 'Start Training', action: 'trigger-booking' },
+                { id: 'booking_choice', label: 'Start Training' },
+                { id: 'back', label: '🔙 Back' },
+            ]
+        },
+        booking_choice: {
+            id: 'booking_choice',
+            text: [
+                "Excellent choice. Where would you like the session to take place?"
+            ],
+            options: [
+                { id: 'at_home', label: '🏠 At Home', action: 'trigger-booking' },
+                { id: 'in_clinic', label: '🏥 In Clinic (CostaSpine)', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
                 { id: 'back', label: '🔙 Back' },
             ]
         },
@@ -101,7 +112,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
             ],
             options: [
                 { id: 'map', label: '🗺️ Clinic Map', action: 'link', value: 'https://maps.google.com/?q=Centro+Comercial+Guadalmina+4,+Marbella' },
-                { id: 'whatsapp', label: '💬 WhatsApp Us', action: 'link', value: 'https://wa.me/34669933534' },
+                { id: 'whatsapp', label: '💬 WhatsApp Us', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
                 { id: 'back', label: '🔙 Main Menu' },
             ]
         },
@@ -112,8 +123,8 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "I prioritize acute injuries."
             ],
             options: [
-                { id: 'whatsapp', label: '💬 WhatsApp Priority', action: 'link', value: 'https://wa.me/34669933534' },
-                { id: 'book', label: 'Book Next Slot', action: 'trigger-booking' },
+                { id: 'whatsapp', label: '💬 WhatsApp Priority', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'booking_choice', label: 'Book Next Slot' },
             ]
         },
         back: {
@@ -131,7 +142,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
             ],
             options: [
                 { id: 'pricing', label: '💰 Precios y Ubicación' },
-                { id: 'book', label: '📅 Agendar Cita', action: 'trigger-booking' },
+                { id: 'booking_choice', label: '📅 Agendar Cita' },
                 { id: 'services', label: '🏆 Servicios' },
                 { id: 'urgent', label: '🚑 Lesión Aguda' },
             ]
@@ -146,8 +157,8 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "Para cita en clínica, contacta por **WhatsApp: +34 669 933 534**."
             ],
             options: [
-                { id: 'book', label: 'Reservar Domicilio', action: 'trigger-booking' },
-                { id: 'whatsapp', label: '💬 WhatsApp Clínica', action: 'link', value: 'https://wa.me/34669933534' },
+                { id: 'booking_choice', label: 'Reservar Cita' },
+                { id: 'whatsapp', label: '💬 WhatsApp Clínica', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
                 { id: 'back', label: '🔙 Menú Principal' },
             ]
         },
@@ -171,7 +182,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "Mis programas están diseñados con datos para que vuelvas al juego más fuerte que antes."
             ],
             options: [
-                { id: 'book', label: 'Reservar Evaluación', action: 'trigger-booking' },
+                { id: 'booking_choice', label: 'Reservar Evaluación' },
                 { id: 'back', label: '🔙 Volver' },
             ]
         },
@@ -182,7 +193,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "Libero la tensión y restauro la biomecánica natural para un alivio inmediato."
             ],
             options: [
-                { id: 'book', label: 'Reservar Sesión', action: 'trigger-booking' },
+                { id: 'booking_choice', label: 'Reservar Sesión' },
                 { id: 'back', label: '🔙 Volver' },
             ]
         },
@@ -193,7 +204,18 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "Entrena como mis clientes profesionales para prevenir lesiones."
             ],
             options: [
-                { id: 'book', label: 'Empezar Entrenamiento', action: 'trigger-booking' },
+                { id: 'booking_choice', label: 'Empezar Entrenamiento' },
+                { id: 'back', label: '🔙 Volver' },
+            ]
+        },
+        booking_choice: {
+            id: 'booking_choice',
+            text: [
+                "Excelente elección. ¿Dónde prefieres que sea la sesión?"
+            ],
+            options: [
+                { id: 'at_home', label: '🏠 A Domicilio', action: 'trigger-booking' },
+                { id: 'in_clinic', label: '🏥 En Clínica (CostaSpine)', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
                 { id: 'back', label: '🔙 Volver' },
             ]
         },
@@ -206,7 +228,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
             ],
             options: [
                 { id: 'map', label: '🗺️ Mapa Clínica', action: 'link', value: 'https://maps.google.com/?q=Centro+Comercial+Guadalmina+4,+Marbella' },
-                { id: 'whatsapp', label: '💬 Contactar WhatsApp', action: 'link', value: 'https://wa.me/34669933534' },
+                { id: 'whatsapp', label: '💬 Contactar WhatsApp', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
                 { id: 'back', label: '🔙 Menú Principal' },
             ]
         },
@@ -217,8 +239,8 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "Doy prioridad a las lesiones agudas."
             ],
             options: [
-                { id: 'whatsapp', label: '💬 WhatsApp Prioritario', action: 'link', value: 'https://wa.me/34669933534' },
-                { id: 'book', label: 'Reservar Turno', action: 'trigger-booking' },
+                { id: 'whatsapp', label: '💬 WhatsApp Prioritario', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'booking_choice', label: 'Reservar Turno' },
             ]
         },
         back: {
