@@ -34,15 +34,15 @@ const parseFrontmatter = (fileContent: string) => {
 };
 
 export const getBlogPosts = async (lang: string = 'en'): Promise<BlogPost[]> => {
-    // Use query: '?raw' for Vite to load file content as string
-    // Catch-all glob to handle both /en/ and /es/
+    // Vite's import.meta.glob with absolute paths starting from project root works best
     const modules = import.meta.glob('/src/content/blog/**/*.md', { query: '?raw', import: 'default' });
 
     const posts: BlogPost[] = [];
 
     for (const path in modules) {
-        // Filter by language folder
-        if (!path.includes(`/${lang}/`)) continue;
+        // Paths from import.meta.glob for absolute paths look like: /src/content/blog/en/post.md
+        // We match exactly the language folder
+        if (!path.includes(`/src/content/blog/${lang}/`)) continue;
 
         const rawContent: string = (await modules[path]()) as string;
         const { data, content } = parseFrontmatter(rawContent);
