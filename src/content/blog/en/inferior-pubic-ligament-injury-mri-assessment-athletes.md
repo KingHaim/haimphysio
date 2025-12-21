@@ -1,6 +1,7 @@
 ---
-title: "Inferior Pubic Ligament Injury: MRI Assessment and Rehabilitation"
+title: "MRI Assessment of Inferior Pubic Ligament Injuries"
 slug: "inferior-pubic-ligament-injury-mri-assessment-athletes"
+date: "2025-12-19"
 excerpt: "Inferior pubic ligament injuries are a common but often overlooked source of groin pain in athletes. We explain how MRI assessment guides targeted rehabilitation strategies that focus on active recovery rather than complete rest."
 image: "/images/inferior-pubic-ligament-injury-mri-assessment-athletes.jpg"
 ---

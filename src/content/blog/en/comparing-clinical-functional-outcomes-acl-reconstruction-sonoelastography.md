@@ -1,6 +1,7 @@
 ---
 title: "Comparing Clinical and Functional Outcomes of ACL Reconstruction Using Sonoelastography"
 slug: "comparing-clinical-functional-outcomes-acl-reconstruction-sonoelastography"
+date: "2025-12-16"
 image: "/images/comparing-clinical-functional-outcomes-acl-reconstruction-sonoelastography.jpg"
 ---
 

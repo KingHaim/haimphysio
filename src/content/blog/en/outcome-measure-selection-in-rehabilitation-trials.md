@@ -1,6 +1,7 @@
 ---
 title: "Navigating Outcome Measures in Rehabilitation Research"
 slug: "outcome-measure-selection-in-rehabilitation-trials"
+date: "2025-12-15"
 image: "/images/outcome-measure-selection-in-rehabilitation-trials.jpg"
 ---
 

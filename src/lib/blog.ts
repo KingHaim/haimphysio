@@ -33,13 +33,17 @@ const parseFrontmatter = (fileContent: string) => {
     return { data, content };
 };
 
-export const getBlogPosts = async (): Promise<BlogPost[]> => {
+export const getBlogPosts = async (lang: string = 'en'): Promise<BlogPost[]> => {
     // Use query: '?raw' for Vite to load file content as string
-    const modules = import.meta.glob('/src/content/blog/*.md', { query: '?raw', import: 'default' });
+    // Catch-all glob to handle both /en/ and /es/
+    const modules = import.meta.glob('/src/content/blog/**/*.md', { query: '?raw', import: 'default' });
 
     const posts: BlogPost[] = [];
 
     for (const path in modules) {
+        // Filter by language folder
+        if (!path.includes(`/${lang}/`)) continue;
+
         const rawContent: string = (await modules[path]()) as string;
         const { data, content } = parseFrontmatter(rawContent);
         const slug = path.split('/').pop()?.replace('.md', '') || '';
@@ -57,7 +61,7 @@ export const getBlogPosts = async (): Promise<BlogPost[]> => {
     return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 };
 
-export const getBlogPost = async (slug: string): Promise<BlogPost | null> => {
-    const posts = await getBlogPosts();
+export const getBlogPost = async (slug: string, lang: string = 'en'): Promise<BlogPost | null> => {
+    const posts = await getBlogPosts(lang);
     return posts.find((p) => p.slug === slug) || null;
 };

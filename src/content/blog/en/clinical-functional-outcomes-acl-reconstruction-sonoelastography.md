@@ -1,6 +1,7 @@
 ---
 title: "Assessing ACL Graft Healing with Sonoelastography"
 slug: "clinical-functional-outcomes-acl-reconstruction-sonoelastography"
+date: "2025-12-16"
 excerpt: "Sonoelastography provides real-time visualization of ACL graft stiffness and healing, offering clinicians objective data beyond traditional imaging. This post explores how integrating sonoelastography into rehabilitation protocols can optimize functional recovery and reduce re-injury risk."
 image: "/images/clinical-functional-outcomes-acl-reconstruction-sonoelastography.jpg"
 ---

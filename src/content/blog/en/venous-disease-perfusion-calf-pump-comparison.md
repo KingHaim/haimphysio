@@ -1,6 +1,7 @@
 ---
-title: "Understanding Venous Disease: Tissue Perfusion and Calf Pump Function in Symptom Severity"
+title: "Comparing Calf Pump Function in Venous Disease"
 slug: "venous-disease-perfusion-calf-pump-comparison"
+date: "2025-12-15"
 image: "/images/venous-disease-perfusion-calf-pump-comparison.jpg"
 ---
 

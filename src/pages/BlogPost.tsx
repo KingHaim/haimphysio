@@ -13,9 +13,9 @@ const BlogPost: React.FC<{ lang: Language }> = ({ lang }) => {
 
   useEffect(() => {
     if (slug) {
-      getBlogPost(slug).then(setPost);
+      getBlogPost(slug, lang).then(setPost);
     }
-  }, [slug]);
+  }, [slug, lang]);
 
   if (!post) return (
     <div className="min-h-screen flex items-center justify-center bg-background text-gray-400">

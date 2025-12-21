@@ -1,7 +1,7 @@
 ---
-title: "Understanding the Shoulder Arthrogram in Clinical Practice"
+title: "The Shoulder Arthrogram: A Clinical Perspective"
 slug: "shoulder-arthrogram-clinical-perspective"
-excerpt: "Shoulder pain that persists despite conservative treatment often leads to an arthrogram recommendation. We explain why this diagnostic tool is valuable, what it reveals about shoulder mechanics, and how to use its findings to guide effective rehabilitation—not just rest."
+date: "2025-12-19"
 image: "/images/shoulder-arthrogram-clinical-perspective.jpg"
 ---
 

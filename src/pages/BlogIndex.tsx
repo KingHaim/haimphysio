@@ -7,12 +7,12 @@ interface BlogIndexProps {
     lang: string;
 }
 
-const BlogIndex: React.FC<BlogIndexProps> = ({ t }) => {
+const BlogIndex: React.FC<BlogIndexProps> = ({ t, lang }) => {
   const [posts, setPosts] = useState<BlogPost[]>([]);
 
   useEffect(() => {
-    getBlogPosts().then(setPosts);
-  }, []);
+    getBlogPosts(lang).then(setPosts);
+  }, [lang]);
 
   return (
     <div className="pt-32 pb-24 min-h-screen container mx-auto px-6">

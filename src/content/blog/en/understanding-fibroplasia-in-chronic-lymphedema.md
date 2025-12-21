@@ -1,6 +1,7 @@
 ---
 title: "Managing Cutaneous Fibroplasia in Chronic Lymphedema"
 slug: "understanding-fibroplasia-in-chronic-lymphedema"
+date: "2025-12-16"
 excerpt: "When chronic lymphedema presents with unusual cutaneous growths, it's not just a cosmetic concern—it's a biomechanical signal of deeper lymphatic dysfunction. We explain the active management approach used in high-performance settings to address both the underlying condition and its manifestations."
 image: "/images/understanding-fibroplasia-in-chronic-lymphedema.jpg"
 ---

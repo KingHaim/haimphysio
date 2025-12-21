@@ -1,6 +1,7 @@
 ---
-title: "Kinesio Taping for Early Postoperative Shoulder Function"
+title: "Early Effects of Kinesio Taping on Rotator Cuff Repair"
 slug: "kinesio-taping-early-effects-rotator-cuff-repair"
+date: "2025-12-16"
 excerpt: "A recent randomized controlled trial reveals that Kinesio Taping applied immediately after arthroscopic rotator cuff repair significantly reduces pain and improves early shoulder function. This evidence-based approach supports active recovery protocols by enhancing proprioception and reducing reliance on pain medication during critical healing phases."
 image: "/images/kinesio-taping-early-effects-rotator-cuff-repair.jpg"
 ---

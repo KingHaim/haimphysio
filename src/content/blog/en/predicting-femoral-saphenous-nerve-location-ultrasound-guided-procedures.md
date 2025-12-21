@@ -1,6 +1,8 @@
 ---
-title: "Anatomical Predictors for Ultrasound-Guided Femoral and Saphenous Nerve Procedures"
+title: "Predicting Nerve Location for Ultrasound-Guided Procedures"
 slug: "predicting-femoral-saphenous-nerve-location-ultrasound-guided-procedures"
+date: "2025-12-16"
+excerpt: "Accurate nerve localization is critical for successful regional anesthesia and interventions. This post discusses predictive modeling and ultrasound-guided techniques to enhance procedural safety and efficacy."
 image: "/images/predicting-femoral-saphenous-nerve-location-ultrasound-guided-procedures.jpg"
 ---
 
