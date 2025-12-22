@@ -6,6 +6,7 @@ export type TranslationKeys = {
         experience: string;
         contact: string;
         bookNow: string;
+        bookingLink: string;
     };
     hero: {
         badge: string;
@@ -70,6 +71,7 @@ export type TranslationKeys = {
         readTime: string;
         ready: string;
         cta: string;
+        bookingLink: string;
     };
     footer: {
         rights: string;

@@ -11,6 +11,7 @@ export const translations: Translations = {
             experience: "Experience",
             contact: "Contact",
             bookNow: "BOOK NOW",
+            bookingLink: "https://calendly.com/haimphysio/physiotherapy-session",
         },
         hero: {
             badge: "Elite Sports Physiotherapy",
@@ -81,6 +82,7 @@ export const translations: Translations = {
             readTime: "3 min read",
             ready: "Ready to perform at your peak?",
             cta: "Book Consultation",
+            bookingLink: "https://calendly.com/haimphysio/physiotherapy-session",
         },
         footer: {
             rights: "© 2024 Haim Ganancia Physiotherapy | Mobile Physiotherapist Marbella. All rights reserved.",
@@ -94,6 +96,7 @@ export const translations: Translations = {
             experience: "Experiencia",
             contact: "Contacto",
             bookNow: "RESERVAR",
+            bookingLink: "https://calendly.com/haimphysio/sesion-de-1-hora",
         },
         hero: {
             badge: "Fisioterapia Deportiva de Élite",
@@ -165,6 +168,7 @@ export const translations: Translations = {
             readTime: "3 min de lectura",
             ready: "¿Listo para rendir al máximo?",
             cta: "Reservar Consulta",
+            bookingLink: "https://calendly.com/haimphysio/sesion-de-1-hora",
         },
         footer: {
             rights: "© 2024 Haim Ganancia Fisioterapia. Todos los derechos reservados.",

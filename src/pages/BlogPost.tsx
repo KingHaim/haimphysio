@@ -66,9 +66,12 @@ const BlogPost: React.FC<{ lang: Language }> = ({ lang }) => {
             {/* Share/CTA Footer */}
             <div className="mt-20 pt-10 border-t border-white/10 text-center">
                 <h3 className="text-white font-bold mb-4">{t.blog.ready}</h3>
-                <a href={lang === 'es' ? '/#contact' : '/#contact'} className="inline-block bg-primary text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors">
+                <button 
+                    onClick={() => window.open(t.blog.bookingLink, '_blank')}
+                    className="inline-block bg-primary text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors"
+                >
                     {t.blog.cta}
-                </a>
+                </button>
             </div>
         </div>
     </article>

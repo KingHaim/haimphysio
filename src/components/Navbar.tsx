@@ -82,13 +82,12 @@ const Navbar: React.FC<NavbarProps> = ({ t, lang, setLang }) => {
               <Globe className="w-4 h-4" />
               <span className="text-xs font-bold">{lang.toUpperCase()}</span>
             </button>
-            <RouterLink
-                to="/#contact"
-                onClick={() => handleNavClick('contact')}
+            <button
+                onClick={() => window.open(t.bookingLink, '_blank')}
                 className="btn-primary px-6 py-2 bg-primary text-black font-bold text-sm tracking-wider hover:bg-white transition-colors duration-300"
             >
                 {t.bookNow}
-            </RouterLink>
+            </button>
           </div>
         </div>
 
