@@ -182,7 +182,7 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ lang }) => {
       {/* Calendly Popup Modal */}
       {isCalendarOpen && (
         <PopupModal
-            url="https://calendly.com/haimphysio"
+            url={lang === 'en' ? 'https://calendly.com/haimphysio/physiotherapy-session' : 'https://calendly.com/haimphysio/sesion-de-1-hora'}
             rootElement={document.getElementById('root') || document.body}
             open={isCalendarOpen}
             onModalClose={() => setIsCalendarOpen(false)}

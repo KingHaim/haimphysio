@@ -41,7 +41,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => window.open('https://calendly.com/haimphysio', '_blank')}
+            onClick={() => window.open(t.bookingLink, '_blank')}
             className="px-8 py-4 bg-primary text-black font-bold text-lg rounded-sm hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.3)]"
           >
             {t.cta}

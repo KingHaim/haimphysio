@@ -13,6 +13,7 @@ export type TranslationKeys = {
         titlePart2: string;
         subtitle: string;
         cta: string;
+        bookingLink: string;
     };
     experience: {
         title: string;
@@ -55,6 +56,7 @@ export type TranslationKeys = {
             title: string;
             description: string;
             button: string;
+            bookingLink: string;
         };
     };
     blog: {

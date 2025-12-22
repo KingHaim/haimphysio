@@ -19,6 +19,7 @@ export const translations: Translations = {
             subtitle:
                 "Former physiotherapist of WTA stars, I offer elite performance and home visit physiotherapy in Marbella. As a mobile physiotherapist in Marbella, I combine science and advanced techniques to help you relieve pain and optimize function wherever you are. Whether you're recovering from injury or seeking to optimize performance, I guide you on the path to excellence.",
             cta: "Book Consultation",
+            bookingLink: "https://calendly.com/haimphysio/physiotherapy-session",
         },
         experience: {
             title: "Professional Experience",
@@ -66,6 +67,7 @@ export const translations: Translations = {
                 description:
                     "Click below to schedule your appointment through Calendly for clinic or home visits in Marbella.",
                 button: "Schedule Appointment",
+                bookingLink: "https://calendly.com/haimphysio/physiotherapy-session",
             },
         },
         blog: {
@@ -100,12 +102,12 @@ export const translations: Translations = {
             subtitle:
                 "Ex fisioterapeuta de estrellas de la WTA, ofrezco servicios de fisioterapeuta a domicilio Marbella para un rendimiento de élite. Combino ciencia y técnicas avanzadas para ayudarte a aliviar el dolor y optimizar tu función física donde lo necesites. Ya sea por una lesión o para mejorar tu rendimiento, te guío hacia tu mejor versión.",
             cta: "Reservar Consulta",
+            bookingLink: "https://calendly.com/haimphysio/sesion-de-1-hora",
         },
         experience: {
             title: "Experiencia Profesional",
             wta: {
-                title:
-                    "Alto Rendimiento: Transformando a los Mejores",
+                title: "Alto Rendimiento: Transforming the Best",
                 description:
                     "He trabajado con estrellas del tenis como Karolina Pliskova y futbolistas de élite, potenciando su rendimiento y acelerando su recuperación con servicios especializados de fisioterapeuta a domicilio Marbella.",
             },
@@ -149,6 +151,7 @@ export const translations: Translations = {
                 description:
                     "Haz clic abajo para programar tu cita a través de Calendly para visitas en clínica o a domicilio en Marbella.",
                 button: "Programar Cita",
+                bookingLink: "https://calendly.com/haimphysio/sesion-de-1-hora",
             },
         },
         blog: {
@@ -164,8 +167,7 @@ export const translations: Translations = {
             cta: "Reservar Consulta",
         },
         footer: {
-            rights:
-                "© 2024 Haim Ganancia Fisioterapia. Todos los derechos reservados.",
+            rights: "© 2024 Haim Ganancia Fisioterapia. Todos los derechos reservados.",
         },
     },
 };

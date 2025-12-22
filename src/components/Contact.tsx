@@ -70,7 +70,7 @@ const Contact: React.FC<ContactProps> = ({ t }) => {
              <p className="text-gray-400 mb-8">{t.form.description}</p>
              
              <button
-               onClick={() => window.open('https://calendly.com/haimphysio', '_blank')}
+               onClick={() => window.open(t.form.bookingLink, '_blank')}
                className="w-full bg-primary text-black font-bold py-4 px-6 rounded-lg hover:bg-white transition-all duration-300 flex items-center justify-center space-x-3 group"
              >
                <Calendar className="w-5 h-5 group-hover:scale-110 transition-transform" />
