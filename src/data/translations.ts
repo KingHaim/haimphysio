@@ -1,6 +1,6 @@
 import { Translations } from '../types';
 
-const CONTACT_ADDRESS = "Centro Comercial Guadalmina 4, Local 90, San Pedro (Marbella)";
+const SERVICE_AREA = "Marbella–Estepona";
 
 export const translations: Translations = {
     en: {
@@ -11,7 +11,7 @@ export const translations: Translations = {
             experience: "Experience",
             contact: "Contact",
             bookNow: "BOOK NOW",
-            bookingLink: "https://calendly.com/haimphysio/physiotherapy-session",
+            bookingLink: "https://book.haimphysio.com/haimphysio/physiotherapy-session",
         },
         hero: {
             badge: "Elite Sports Physiotherapy",
@@ -20,7 +20,7 @@ export const translations: Translations = {
             subtitle:
                 "Former physiotherapist of WTA stars, I offer elite performance and home visit physiotherapy in Marbella. As a mobile physiotherapist in Marbella, I combine science and advanced techniques to help you relieve pain and optimize function wherever you are. Whether you're recovering from injury or seeking to optimize performance, I guide you on the path to excellence.",
             cta: "Book Consultation",
-            bookingLink: "https://calendly.com/haimphysio/physiotherapy-session",
+            bookingLink: "https://book.haimphysio.com/haimphysio/physiotherapy-session",
         },
         experience: {
             title: "Professional Experience",
@@ -54,8 +54,8 @@ export const translations: Translations = {
         },
         contact: {
             title: "Contact Information",
-            location: "Location",
-            address: CONTACT_ADDRESS,
+            location: "Home Visit Area",
+            address: SERVICE_AREA,
             phone: "Phone",
             email: "Email",
             hours: "Hours",
@@ -66,9 +66,9 @@ export const translations: Translations = {
             form: {
                 title: "Book an Appointment",
                 description:
-                    "Click below to schedule your appointment through Calendly for clinic or home visits in Marbella.",
+                    "Click below to schedule a home visit through my online booking calendar in the Marbella–Estepona area.",
                 button: "Schedule Appointment",
-                bookingLink: "https://calendly.com/haimphysio/physiotherapy-session",
+                bookingLink: "https://book.haimphysio.com/haimphysio/physiotherapy-session",
             },
         },
         blog: {
@@ -82,7 +82,7 @@ export const translations: Translations = {
             readTime: "3 min read",
             ready: "Ready to perform at your peak?",
             cta: "Book Consultation",
-            bookingLink: "https://calendly.com/haimphysio/physiotherapy-session",
+            bookingLink: "https://book.haimphysio.com/haimphysio/physiotherapy-session",
         },
         footer: {
             rights: "© 2024 Haim Ganancia Physiotherapy | Mobile Physiotherapist Marbella. All rights reserved.",
@@ -96,7 +96,7 @@ export const translations: Translations = {
             experience: "Experiencia",
             contact: "Contacto",
             bookNow: "RESERVAR",
-            bookingLink: "https://calendly.com/haimphysio/sesion-de-1-hora",
+            bookingLink: "https://book.haimphysio.com/haimphysio/sesion-de-1-hora",
         },
         hero: {
             badge: "Fisioterapia Deportiva de Élite",
@@ -105,7 +105,7 @@ export const translations: Translations = {
             subtitle:
                 "Ex fisioterapeuta de estrellas de la WTA, ofrezco servicios de fisioterapeuta a domicilio Marbella para un rendimiento de élite. Combino ciencia y técnicas avanzadas para ayudarte a aliviar el dolor y optimizar tu función física donde lo necesites. Ya sea por una lesión o para mejorar tu rendimiento, te guío hacia tu mejor versión.",
             cta: "Reservar Consulta",
-            bookingLink: "https://calendly.com/haimphysio/sesion-de-1-hora",
+            bookingLink: "https://book.haimphysio.com/haimphysio/sesion-de-1-hora",
         },
         experience: {
             title: "Experiencia Profesional",
@@ -140,8 +140,8 @@ export const translations: Translations = {
         },
         contact: {
             title: "Información de Contacto",
-            location: "Ubicación",
-            address: CONTACT_ADDRESS,
+            location: "Zona de Visitas a Domicilio",
+            address: SERVICE_AREA,
             phone: "Teléfono",
             email: "Correo",
             hours: "Horario",
@@ -152,9 +152,9 @@ export const translations: Translations = {
             form: {
                 title: "Reservar una Cita",
                 description:
-                    "Haz clic abajo para programar tu cita a través de Calendly para visitas en clínica o a domicilio en Marbella.",
+                    "Haz clic abajo para programar una visita a domicilio a través de mi calendario de reservas online en la zona Marbella–Estepona.",
                 button: "Programar Cita",
-                bookingLink: "https://calendly.com/haimphysio/sesion-de-1-hora",
+                bookingLink: "https://book.haimphysio.com/haimphysio/sesion-de-1-hora",
             },
         },
         blog: {
@@ -168,7 +168,7 @@ export const translations: Translations = {
             readTime: "3 min de lectura",
             ready: "¿Listo para rendir al máximo?",
             cta: "Reservar Consulta",
-            bookingLink: "https://calendly.com/haimphysio/sesion-de-1-hora",
+            bookingLink: "https://book.haimphysio.com/haimphysio/sesion-de-1-hora",
         },
         footer: {
             rights: "© 2024 Haim Ganancia Fisioterapia. Todos los derechos reservados.",

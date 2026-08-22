@@ -34,15 +34,15 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
         pricing: {
             id: 'pricing',
             text: [
-                "Here are my rates:",
-                "🏠 **Home Visits**: 120€ (Comfort of your home).",
-                "🏥 **Clinic (CostaSpine)**: 90€ (First Session), 80€ (Follow-ups).",
-                "🎁 **Clinic Pack**: 5 Sessions for 350€ (70€/session).",
-                "To book at the clinic, contact via **WhatsApp: +34 622 85 16 48**."
+                "Here are my summer home-visit rates:",
+                "🏠 **Single Home Visit**: 150€.",
+                "🎁 **5-Session Package**: 600€ (120€/session).",
+                "🎁 **10-Session Package**: 1,000€ (100€/session).",
+                "Home visits are available in the Marbella–Estepona area."
             ],
             options: [
-                { id: 'booking_choice', label: 'Book Appointment' },
-                { id: 'whatsapp', label: '💬 WhatsApp Clinic', action: 'link', value: 'https://wa.me/34622851648?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20with%20Haim' },
+                { id: 'booking_choice', label: 'Book Home Visit' },
+                { id: 'whatsapp', label: '💬 WhatsApp', action: 'link', value: 'https://wa.me/34669933534?text=Hi,%20I%20would%20like%20to%20book%20a%20home%20visit%20with%20Haim' },
                 { id: 'back', label: '🔙 Main Menu' },
             ]
         },
@@ -95,24 +95,22 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
         booking_choice: {
             id: 'booking_choice',
             text: [
-                "Excellent choice. Where would you like the session to take place?"
+                "Excellent choice. All sessions are provided as home visits in the Marbella–Estepona area."
             ],
             options: [
-                { id: 'at_home', label: '🏠 At Home', action: 'trigger-booking' },
-                { id: 'in_clinic', label: '🏥 In Clinic (CostaSpine)', action: 'link', value: 'https://wa.me/34622851648?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20with%20Haim' },
+                { id: 'at_home', label: '🏠 Book Home Visit', action: 'trigger-booking' },
                 { id: 'back', label: '🔙 Back' },
             ]
         },
         location: {
             id: 'location',
             text: [
-                "**Clinic**: Centro Comercial Guadalmina 4, Local 90, San Pedro (Marbella).",
-                "**Home Service**: Available in Marbella - Estepona area.",
+                "**Home Service Area**: Marbella–Estepona.",
                 "Open Mon-Fri 12:00 - 20:00."
             ],
             options: [
-                { id: 'map', label: '🗺️ Clinic Map', action: 'link', value: 'https://maps.google.com/?q=Centro+Comercial+Guadalmina+4,+Marbella' },
-                { id: 'whatsapp', label: '💬 WhatsApp Us', action: 'link', value: 'https://wa.me/34622851648?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20with%20Haim' },
+                { id: 'booking_choice', label: '🏠 Book Home Visit' },
+                { id: 'whatsapp', label: '💬 WhatsApp', action: 'link', value: 'https://wa.me/34669933534?text=Hi,%20I%20would%20like%20to%20book%20a%20home%20visit%20with%20Haim' },
                 { id: 'back', label: '🔙 Main Menu' },
             ]
         },
@@ -123,7 +121,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "I prioritize acute injuries."
             ],
             options: [
-                { id: 'whatsapp', label: '💬 WhatsApp Priority', action: 'link', value: 'https://wa.me/34622851648?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20with%20Haim' },
+                { id: 'whatsapp', label: '💬 WhatsApp Priority', action: 'link', value: 'https://wa.me/34669933534?text=Hi,%20I%20need%20an%20urgent%20home%20visit%20with%20Haim' },
                 { id: 'booking_choice', label: 'Book Next Slot' },
             ]
         },
@@ -150,15 +148,15 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
         pricing: {
             id: 'pricing',
             text: [
-                "Aquí tienes mis tarifas:",
-                "🏠 **Domicilio**: 120€.",
-                "🏥 **Clínica (CostaSpine)**: 90€ (1ª Sesión), 80€ (Seguimientos).",
-                "🎁 **Bono Clínica**: 5 Sesiones por 350€ (70€/sesión).",
-                "Para cita en clínica, contacta por **WhatsApp: +34 622 85 16 48**."
+                "Estas son mis tarifas de verano a domicilio:",
+                "🏠 **Sesión individual a domicilio**: 150€.",
+                "🎁 **Bono de 5 sesiones**: 600€ (120€/sesión).",
+                "🎁 **Bono de 10 sesiones**: 1.000€ (100€/sesión).",
+                "Las visitas a domicilio están disponibles en la zona Marbella–Estepona."
             ],
             options: [
-                { id: 'booking_choice', label: 'Reservar Cita' },
-                { id: 'whatsapp', label: '💬 WhatsApp Clínica', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'booking_choice', label: 'Reservar a Domicilio' },
+                { id: 'whatsapp', label: '💬 WhatsApp', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20reservar%20una%20visita%20a%20domicilio%20con%20Haim' },
                 { id: 'back', label: '🔙 Menú Principal' },
             ]
         },
@@ -211,24 +209,22 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
         booking_choice: {
             id: 'booking_choice',
             text: [
-                "Excelente elección. ¿Dónde prefieres que sea la sesión?"
+                "Excelente elección. Todas las sesiones se realizan a domicilio en la zona Marbella–Estepona."
             ],
             options: [
-                { id: 'at_home', label: '🏠 A Domicilio', action: 'trigger-booking' },
-                { id: 'in_clinic', label: '🏥 En Clínica (CostaSpine)', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'at_home', label: '🏠 Reservar a Domicilio', action: 'trigger-booking' },
                 { id: 'back', label: '🔙 Volver' },
             ]
         },
         location: {
             id: 'location',
             text: [
-                "**Clínica**: Centro Comercial Guadalmina 4, Local 90, San Pedro (Marbella).",
-                "**Domicilio**: Zona Marbella - Estepona.",
+                "**Zona de servicio a domicilio**: Marbella–Estepona.",
                 "Abierto Lun-Vie 12:00 - 20:00."
             ],
             options: [
-                { id: 'map', label: '🗺️ Mapa Clínica', action: 'link', value: 'https://maps.google.com/?q=Centro+Comercial+Guadalmina 4,+Marbella' },
-                { id: 'whatsapp', label: '💬 Contactar WhatsApp', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'booking_choice', label: '🏠 Reservar a Domicilio' },
+                { id: 'whatsapp', label: '💬 Contactar por WhatsApp', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20me%20gustar%C3%ADa%20reservar%20una%20visita%20a%20domicilio%20con%20Haim' },
                 { id: 'back', label: '🔙 Menú Principal' },
             ]
         },
@@ -239,7 +235,7 @@ export const chatData: { en: ChatScript; es: ChatScript } = {
                 "Doy prioridad a las lesiones agudas."
             ],
             options: [
-                { id: 'whatsapp', label: '💬 WhatsApp Prioritario', action: 'link', value: 'https://wa.me/34622851648?text=Hola,%20me%20gustar%C3%ADa%20pedir%20cita%20con%20Haim' },
+                { id: 'whatsapp', label: '💬 WhatsApp Prioritario', action: 'link', value: 'https://wa.me/34669933534?text=Hola,%20necesito%20una%20visita%20urgente%20a%20domicilio%20con%20Haim' },
                 { id: 'booking_choice', label: 'Reservar Turno' },
             ]
         },

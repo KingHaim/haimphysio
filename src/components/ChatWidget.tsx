@@ -3,7 +3,6 @@ import { MessageCircle, X, Bot, Minus } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Language } from '../types';
 import { chatData, ChatOption } from '../data/chatScripts';
-import { PopupModal } from 'react-calendly';
 
 interface ChatWidgetProps {
   lang: Language;
@@ -20,14 +19,9 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ lang }) => {
   const [currentScriptNode, setCurrentScriptNode] = useState('welcome');
   const [isTyping, setIsTyping] = useState(false);
   const [hasUnread, setHasUnread] = useState(true);
-  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
   
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const currentData = chatData[lang];
-  // Ideally this rootElement is set elsewhere, but often defaults to document.body if not specified.
-  // react-calendly needs a rootElement to mount the modal. 
-  // We'll use document.getElementById('root') which is standard in Vite.
-  const rootElement = document.getElementById('root');
 
   // Initialize chat when opening or changing language
   useEffect(() => {
@@ -73,8 +67,10 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ lang }) => {
     setMessages(prev => [...prev, { type: 'user', text: option.label }]);
     
     if (option.action === 'trigger-booking') {
-        setIsCalendarOpen(true);
-        // Optionally add a follow up message from bot like "Opening calendar..."
+        const bookingUrl = lang === 'en'
+          ? 'https://book.haimphysio.com/haimphysio/physiotherapy-session'
+          : 'https://book.haimphysio.com/haimphysio/sesion-de-1-hora';
+        window.open(bookingUrl, '_blank');
     } else if (option.action === 'link' && option.value) {
         window.open(option.value, '_blank');
     } else {
@@ -179,15 +175,6 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ lang }) => {
         )}
       </motion.button>
 
-      {/* Calendly Popup Modal */}
-      {isCalendarOpen && (
-        <PopupModal
-            url={lang === 'en' ? 'https://calendly.com/haimphysio/physiotherapy-session' : 'https://calendly.com/haimphysio/sesion-de-1-hora'}
-            rootElement={document.getElementById('root') || document.body}
-            open={isCalendarOpen}
-            onModalClose={() => setIsCalendarOpen(false)}
-        />
-      )}
     </>
   );
 };
